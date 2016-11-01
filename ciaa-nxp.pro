@@ -1,4 +1,4 @@
-update=Mon Oct 31 23:38:32 2016
+update=Tue Nov  1 15:18:00 2016
 version=1
 last_client=kicad
 [pcbnew]
@@ -85,9 +85,21 @@ version=1
 NetIExt=net
 [cvpcb/libraries]
 EquName1=devcms
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=docs/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
+[general]
+version=1
 [eeschema]
 version=1
-LibDir=components
+LibDir=components;/home/lchico/Especialidad/Proyecto/Hardware/poncho_fermentacion_vino_tp/libs_kicad/YT_capteurs;libs_kicad/YT_capteurs;/home/lchico/Especialidad/Proyecto/Hardware/poncho_fermentacion_vino_tp/libs_kicad/kicad-library-master/library
 [eeschema/libraries]
 LibName1=ciaa-nxp-rescue
 LibName2=power
@@ -157,15 +169,3 @@ LibName65=components/pbss5240xf
 LibName66=components/sw_push
 LibName67=mcp1416
 LibName68=fqt13n06l
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=docs/
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
-[general]
-version=1
