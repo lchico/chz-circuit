@@ -1,0 +1,290 @@
+EESchema Schematic File Version 2
+LIBS:ciaa-nxp-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:74LVC1G04GW
+LIBS:amesser-ad
+LIBS:amesser-cmos4000
+LIBS:amesser-conn
+LIBS:amesser-discrete
+LIBS:amesser-linear
+LIBS:amesser-power
+LIBS:amesser-usb
+LIBS:audio-vlsi
+LIBS:bat54_c
+LIBS:BLM15HG6015N1D
+LIBS:g5v2
+LIBS:lm2596
+LIBS:mcu-nxp
+LIBS:mcu-st
+LIBS:MIC2025
+LIBS:net-phy
+LIBS:nsi50010yt1g
+LIBS:PRTR5V0U2X
+LIBS:regulators
+LIBS:rs485_rs232_can
+LIBS:s25fl032p0xmfi013
+LIBS:SCHA5B0200
+LIBS:Si50x
+LIBS:Transil_diode
+LIBS:w_device
+LIBS:LPC4337JBD144
+LIBS:IS42S16400F
+LIBS:TXB0108
+LIBS:FT2232H
+LIBS:93CXX
+LIBS:TJA1040
+LIBS:tvs
+LIBS:PBSS5240
+LIBS:pbss5240xf
+LIBS:sw_push
+LIBS:mcp1416
+LIBS:fqt13n06l
+LIBS:ciaa-nxp-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title "CIAA RS485 - RS232 - CAN"
+Date "11 may 2015"
+Rev "1.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L C_MINI C24
+U 1 1 52C5B352
+P 3850 3050
+F 0 "C24" V 3850 3150 30  0000 C CNN
+F 1 "100nF" V 3900 3200 30  0000 C CNN
+F 2 "~" H 3850 3050 60  0000 C CNN
+F 3 "~" H 3850 3050 60  0000 C CNN
+	1    3850 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L C_MINI C26
+U 1 1 52C5B353
+P 3850 3550
+F 0 "C26" V 3850 3650 30  0000 C CNN
+F 1 "100nF" V 3900 3700 30  0000 C CNN
+F 2 "~" H 3850 3550 60  0000 C CNN
+F 3 "~" H 3850 3550 60  0000 C CNN
+	1    3850 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L C_MINI C25
+U 1 1 52C5B354
+P 5800 3250
+F 0 "C25" H 5800 3400 30  0000 C CNN
+F 1 "100nF" H 5800 3350 30  0000 C CNN
+F 2 "~" H 5800 3250 60  0000 C CNN
+F 3 "~" H 5800 3250 60  0000 C CNN
+	1    5800 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_MINI C27
+U 1 1 52C5B355
+P 5800 3750
+F 0 "C27" H 5800 3900 30  0000 C CNN
+F 1 "100nF" H 5800 3850 30  0000 C CNN
+F 2 "~" H 5800 3750 60  0000 C CNN
+F 3 "~" H 5800 3750 60  0000 C CNN
+	1    5800 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-ciaa-nxp #PWR095
+U 1 1 52C5B356
+P 5950 3350
+F 0 "#PWR095" H 5950 3350 30  0001 C CNN
+F 1 "GND" H 5950 3280 30  0001 C CNN
+F 2 "" H 5950 3350 60  0000 C CNN
+F 3 "" H 5950 3350 60  0000 C CNN
+	1    5950 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-ciaa-nxp #PWR096
+U 1 1 52C5B357
+P 5950 3850
+F 0 "#PWR096" H 5950 3850 30  0001 C CNN
+F 1 "GND" H 5950 3780 30  0001 C CNN
+F 2 "" H 5950 3850 60  0000 C CNN
+F 3 "" H 5950 3850 60  0000 C CNN
+	1    5950 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_MINI C23
+U 1 1 52C5B359
+P 5800 2850
+F 0 "C23" V 5800 2950 30  0000 C CNN
+F 1 "100nF" V 5850 3000 30  0000 C CNN
+F 2 "~" H 5800 2850 60  0000 C CNN
+F 3 "~" H 5800 2850 60  0000 C CNN
+	1    5800 2850
+	1    0    0    -1  
+$EndComp
+Text Notes 8500 5200 0    60   ~ 0
+RS232
+Text HLabel 3400 3950 0    30   Input ~ 0
+TTL_RS232_RXD1
+Text HLabel 3400 4050 0    30   Input ~ 0
+TTL_RS232_RXD2
+Text HLabel 3400 4250 0    30   Output ~ 0
+TTL_RS232_TXD2
+Text HLabel 3400 4150 0    30   Output ~ 0
+TTL_RS232_TXD1
+$Comp
+L ST3232E U6
+U 1 1 52C61C4D
+P 4800 3550
+F 0 "U6" H 4800 4400 70  0000 C CNN
+F 1 "ST3232E" H 4800 2700 70  0000 C CNN
+F 2 "" H 4800 3550 60  0000 C CNN
+F 3 "" H 4800 3550 60  0000 C CNN
+	1    4800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-ciaa-nxp #PWR0107
+U 1 1 52C620B8
+P 5650 3500
+F 0 "#PWR0107" H 5650 3500 30  0001 C CNN
+F 1 "GND" H 5650 3430 30  0001 C CNN
+F 2 "" H 5650 3500 60  0000 C CNN
+F 3 "" H 5650 3500 60  0000 C CNN
+	1    5650 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND-RESCUE-ciaa-nxp #PWR0108
+U 1 1 52C622EC
+P 5950 2950
+F 0 "#PWR0108" H 5950 2950 30  0001 C CNN
+F 1 "GND" H 5950 2880 30  0001 C CNN
+F 2 "" H 5950 2950 60  0000 C CNN
+F 3 "" H 5950 2950 60  0000 C CNN
+	1    5950 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V-RESCUE-ciaa-nxp #PWR0110
+U 1 1 52E1F170
+P 5650 2800
+F 0 "#PWR0110" H 5650 2760 30  0001 C CNN
+F 1 "+3.3V" H 5650 2910 30  0000 C CNN
+F 2 "" H 5650 2800 60  0000 C CNN
+F 3 "" H 5650 2800 60  0000 C CNN
+	1    5650 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3450 3850 3350
+Wire Wire Line
+	3850 3350 4000 3350
+Wire Wire Line
+	3850 3150 3850 3250
+Wire Wire Line
+	3850 3250 4000 3250
+Wire Wire Line
+	3850 2950 3850 2850
+Wire Wire Line
+	3850 2850 4000 2850
+Wire Wire Line
+	3850 3650 3850 3750
+Wire Wire Line
+	3850 3750 4000 3750
+Wire Wire Line
+	4000 3950 3400 3950
+Wire Wire Line
+	3400 4050 4000 4050
+Wire Wire Line
+	4000 4150 3400 4150
+Wire Wire Line
+	4000 4250 3400 4250
+Wire Notes Line
+	8900 5300 8900 2200
+Wire Notes Line
+	8900 2200 2800 2200
+Wire Notes Line
+	2800 5300 8900 5300
+Wire Wire Line
+	5600 3750 5700 3750
+Wire Wire Line
+	5900 3750 5950 3750
+Wire Wire Line
+	5950 3750 5950 3850
+Wire Wire Line
+	5900 3250 5950 3250
+Wire Wire Line
+	5950 3250 5950 3350
+Wire Wire Line
+	5600 3250 5700 3250
+Wire Wire Line
+	5600 3450 5650 3450
+Wire Wire Line
+	5650 3450 5650 3500
+Wire Wire Line
+	5600 2850 5700 2850
+Wire Wire Line
+	5650 2800 5650 2850
+Connection ~ 5650 2850
+Wire Wire Line
+	5900 2850 5950 2850
+Wire Wire Line
+	5950 2850 5950 2950
+Connection ~ 5650 3250
+Wire Notes Line
+	2800 2200 2800 5300
+Wire Wire Line
+	5600 3950 6400 3950
+Wire Wire Line
+	5600 4050 6400 4050
+Wire Wire Line
+	5600 4150 6400 4150
+Wire Wire Line
+	5600 4250 6400 4250
+Text HLabel 6400 4150 2    60   Input ~ 0
+RS232_RXD1
+Text HLabel 6400 4050 2    60   Output ~ 0
+RS232_TXD2
+Text HLabel 6400 3950 2    60   Output ~ 0
+RS232_TXD1
+Text HLabel 6400 4250 2    60   Input ~ 0
+RS232_RXD2
+$EndSCHEMATC
