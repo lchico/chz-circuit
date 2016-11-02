@@ -1,35 +1,20 @@
 EESchema Schematic File Version 2
-LIBS:ciaa-nxp-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
+LIBS:sensors
 LIBS:74LVC1G04GW
+LIBS:93CXX
+LIBS:BLM15HG6015N1D
+LIBS:FT2232H
+LIBS:IS42S16400F
+LIBS:LPC4337JBD144
+LIBS:MIC2025
+LIBS:PBSS5240
+LIBS:PRTR5V0U2X
+LIBS:PS2805
+LIBS:SCHA5B0200
+LIBS:Si50x
+LIBS:TJA1040
+LIBS:TXB0108
+LIBS:Transil_diode
 LIBS:amesser-ad
 LIBS:amesser-cmos4000
 LIBS:amesser-conn
@@ -39,34 +24,101 @@ LIBS:amesser-power
 LIBS:amesser-usb
 LIBS:audio-vlsi
 LIBS:bat54_c
-LIBS:BLM15HG6015N1D
+LIBS:capteurs
+LIBS:fqt13n06l
 LIBS:g5v2
 LIBS:lm2596
+LIBS:mcp1415
+LIBS:mcp1416
 LIBS:mcu-nxp
 LIBS:mcu-st
-LIBS:MIC2025
+LIBS:my_lab
 LIBS:net-phy
 LIBS:nsi50010yt1g
-LIBS:PRTR5V0U2X
+LIBS:pbss5240xf
 LIBS:regulators
 LIBS:rs485_rs232_can
 LIBS:s25fl032p0xmfi013
-LIBS:SCHA5B0200
-LIBS:Si50x
-LIBS:Transil_diode
-LIBS:w_device
-LIBS:LPC4337JBD144
-LIBS:IS42S16400F
-LIBS:TXB0108
-LIBS:FT2232H
-LIBS:93CXX
-LIBS:TJA1040
-LIBS:tvs
-LIBS:PBSS5240
-LIBS:pbss5240xf
 LIBS:sw_push
-LIBS:mcp1416
-LIBS:fqt13n06l
+LIBS:tvs
+LIBS:w_device
+LIBS:74xgxx
+LIBS:74xx
+LIBS:Altera
+LIBS:ESD_Protection
+LIBS:Lattice
+LIBS:Oscillators
+LIBS:Power_Management
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:Zilog
+LIBS:ac-dc
+LIBS:actel
+LIBS:adc-dac
+LIBS:analog_devices
+LIBS:analog_switches
+LIBS:atmel
+LIBS:audio
+LIBS:brooktre
+LIBS:cmos4000
+LIBS:cmos_ieee
+LIBS:conn
+LIBS:contrib
+LIBS:cypress
+LIBS:dc-dc
+LIBS:device
+LIBS:digital-audio
+LIBS:diode
+LIBS:display
+LIBS:dsp
+LIBS:elec-unifil
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:intel
+LIBS:interface
+LIBS:ir
+LIBS:linear
+LIBS:logo
+LIBS:maxim
+LIBS:memory
+LIBS:microchip
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:microcontrollers
+LIBS:motor_drivers
+LIBS:motorola
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:opto
+LIBS:philips
+LIBS:power
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:regul
+LIBS:relays
+LIBS:rfcom
+LIBS:silabs
+LIBS:siliconi
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:texas
+LIBS:transf
+LIBS:transistors
+LIBS:ttl_ieee
+LIBS:valves
+LIBS:video
+LIBS:xilinx
 LIBS:ciaa-nxp-cache
 EELAYER 25 0
 EELAYER END
@@ -83,10 +135,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L C_MINI C24
+L C_MINI C1
 U 1 1 52C5B352
 P 3850 3050
-F 0 "C24" V 3850 3150 30  0000 C CNN
+F 0 "C1" V 3850 3150 30  0000 C CNN
 F 1 "100nF" V 3900 3200 30  0000 C CNN
 F 2 "~" H 3850 3050 60  0000 C CNN
 F 3 "~" H 3850 3050 60  0000 C CNN
@@ -94,10 +146,10 @@ F 3 "~" H 3850 3050 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C_MINI C26
+L C_MINI C2
 U 1 1 52C5B353
 P 3850 3550
-F 0 "C26" V 3850 3650 30  0000 C CNN
+F 0 "C2" V 3850 3650 30  0000 C CNN
 F 1 "100nF" V 3900 3700 30  0000 C CNN
 F 2 "~" H 3850 3550 60  0000 C CNN
 F 3 "~" H 3850 3550 60  0000 C CNN
@@ -105,10 +157,10 @@ F 3 "~" H 3850 3550 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C_MINI C25
+L C_MINI C4
 U 1 1 52C5B354
 P 5800 3250
-F 0 "C25" H 5800 3400 30  0000 C CNN
+F 0 "C4" H 5800 3400 30  0000 C CNN
 F 1 "100nF" H 5800 3350 30  0000 C CNN
 F 2 "~" H 5800 3250 60  0000 C CNN
 F 3 "~" H 5800 3250 60  0000 C CNN
@@ -116,10 +168,10 @@ F 3 "~" H 5800 3250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_MINI C27
+L C_MINI C5
 U 1 1 52C5B355
 P 5800 3750
-F 0 "C27" H 5800 3900 30  0000 C CNN
+F 0 "C5" H 5800 3900 30  0000 C CNN
 F 1 "100nF" H 5800 3850 30  0000 C CNN
 F 2 "~" H 5800 3750 60  0000 C CNN
 F 3 "~" H 5800 3750 60  0000 C CNN
@@ -149,10 +201,10 @@ F 3 "" H 5950 3850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_MINI C23
+L C_MINI C3
 U 1 1 52C5B359
 P 5800 2850
-F 0 "C23" V 5800 2950 30  0000 C CNN
+F 0 "C3" V 5800 2950 30  0000 C CNN
 F 1 "100nF" V 5850 3000 30  0000 C CNN
 F 2 "~" H 5800 2850 60  0000 C CNN
 F 3 "~" H 5800 2850 60  0000 C CNN
@@ -166,10 +218,10 @@ TTL_RS232_RXD1
 Text HLabel 3350 3150 1    30   Output ~ 0
 TTL_RS232_TXD1
 $Comp
-L ST3232E U6
+L ST3232E U1
 U 1 1 52C61C4D
 P 4800 3550
-F 0 "U6" H 4800 4400 70  0000 C CNN
+F 0 "U1" H 4800 4400 70  0000 C CNN
 F 1 "ST3232E" H 4800 2700 70  0000 C CNN
 F 2 "" H 4800 3550 60  0000 C CNN
 F 3 "" H 4800 3550 60  0000 C CNN
@@ -259,10 +311,10 @@ Wire Wire Line
 Wire Notes Line
 	2800 2200 2800 5300
 $Comp
-L TB_1X2 J1
+L TB_1X2 J4
 U 1 1 581961FA
 P 6450 4050
-F 0 "J1" H 6450 4350 60  0000 C CNN
+F 0 "J4" H 6450 4350 60  0000 C CNN
 F 1 "TB_1X2" H 6500 3750 60  0000 C CNN
 F 2 "" H 6400 4100 60  0000 C CNN
 F 3 "" H 6400 4100 60  0000 C CNN
@@ -272,10 +324,10 @@ $EndComp
 Wire Wire Line
 	5600 4050 5850 4050
 $Comp
-L CONN_02X02 P5
+L CONN_02X02 P1
 U 1 1 581970D4
 P 3300 3500
-F 0 "P5" H 3300 3650 50  0000 C CNN
+F 0 "P1" H 3300 3650 50  0000 C CNN
 F 1 "CONN_02X02" H 3300 3350 50  0000 C CNN
 F 2 "" H 3300 2300 50  0000 C CNN
 F 3 "" H 3300 2300 50  0000 C CNN
@@ -283,10 +335,10 @@ F 3 "" H 3300 2300 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L TB_1X2 J4
+L TB_1X2 J1
 U 1 1 5819740E
 P 3100 4350
-F 0 "J4" H 3100 4650 60  0000 C CNN
+F 0 "J1" H 3100 4650 60  0000 C CNN
 F 1 "TB_1X2" H 3150 4050 60  0000 C CNN
 F 2 "" H 3050 4400 60  0000 C CNN
 F 3 "" H 3050 4400 60  0000 C CNN
@@ -294,10 +346,10 @@ F 3 "" H 3050 4400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TB_1X2 J5
+L TB_1X2 J2
 U 1 1 58197493
 P 3800 5100
-F 0 "J5" H 3800 5400 60  0000 C CNN
+F 0 "J2" H 3800 5400 60  0000 C CNN
 F 1 "TB_1X2" H 3850 4800 60  0000 C CNN
 F 2 "" H 3750 5150 60  0000 C CNN
 F 3 "" H 3750 5150 60  0000 C CNN
